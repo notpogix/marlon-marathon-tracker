@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marlon Marathon Tracker</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-bottom: 1px solid #222;
+    }
+    h1 {
+      margin-bottom: 0.3rem;
+      font-size: 2rem;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      border-left: 4px solid #9146FF;
+      padding-left: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .data-box {
+      background: #1a1a1a;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-top: 1px solid #222;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    footer a:hover {
+      color: #9146FF;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Marlon’s 24/7 Marathon Tracker</h1>
+    <p>Tracking subs, bits, followers, chatters, and emotes in real time*</p>
+  </header>
+
+  <main>
+    <section id="subs">
+      <h2>📦 Subs</h2>
+      <div class="data-box" id="totalSubs">Loading total subs...</div>
+      <div class="data-box" id="marathonSubs">Loading marathon subs...</div>
+      <div class="data-box" id="topGifters">Loading top sub gifters...</div>
+    </section>
+
+    <section id="bits">
+      <h2>💎 Bits</h2>
+      <div class="data-box" id="totalBits">Loading total bits...</div>
+      <div class="data-box" id="topBits">Loading top bit gifters...</div>
+    </section>
+
+    <section id="followers">
+      <h2>📈 Followers</h2>
+      <div class="data-box" id="followersGained">Loading followers gained...</div>
+    </section>
+
+    <section id="chat">
+      <h2>💬 Chat Activity</h2>
+      <div class="data-box" id="topChatters">Loading top chatters...</div>
+    </section>
+
+    <section id="emotes">
+      <h2>😎 Top 7TV Emotes</h2>
+      <div class="data-box" id="topEmotes">Loading top 7TV emotes...</div>
+    </section>
+  </main>
+
+  <footer>
+    MADE BY <a href="https://www.twitch.tv/0pogix" target="_blank">POGIX</a>
+  </footer>
+
+  <script src="scripts/fetch_twitch.js"></script>
+</body>
+</html>
